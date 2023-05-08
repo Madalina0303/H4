@@ -1,0 +1,29 @@
+.webc-datatable--header {
+
+  font-size: 110%;
+
+  font-weight: bold;
+
+  padding: 0.5rem 0;
+
+  margin-bottom: 0.5rem;
+
+  border-bottom: 1px solid var(--primary-color);
+
+}
+
+.webc-datatable--container {
+
+  display: grid;
+
+  grid-template-columns: auto 1fr ;
+
+  gap: 0.35rem 1rem;
+
+}
+
+.webc-datatable--container div:not(.webc-datatable--header) {
+
+  border-bottom: 1px dashed var(--primary-color-transparent);
+
+}

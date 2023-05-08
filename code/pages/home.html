@@ -1,0 +1,32 @@
+<link href="./assets/pages/viewEvents.css" rel="stylesheet" />
+<webc-container controller=" ViewEventController">
+
+   <h1>View Events</h1>
+   <br>
+
+   <div data-tag="add-event" class="action-button">Add event</div>
+
+   <br>
+
+   <div class="middle-vertical-axis">Events</div>
+   <webc-datatable datasource="@eventDataSource">
+    <div slot="header">Date</div>
+
+    <div slot="header">Time</div>
+    <div slot="header">Name</div>
+
+    <div slot="header">Details</div>
+
+    <div>{{ @date }}</div>
+
+    <div>{{ @time }}</div>
+    <div>{{ @category }}</div>
+
+    <div>{{ @details }}</div>
+
+</webc-datatable>
+
+</div>
+
+
+</webc-container>

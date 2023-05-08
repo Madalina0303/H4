@@ -1,0 +1,25 @@
+<link href="./assets/pages/viewEvents.css" rel="stylesheet" />
+<webc-container controller=" ViewEventController">
+
+   <h1>View Events</h1>
+
+   <br>
+
+   <div class="middle-vertical-axis">Categories</div>
+   <webc-datatable datasource="@eventDataSource">
+    <div slot="no-data">
+        You have no categories.
+    </div>
+    <div>
+        <div data-tag="category-click">
+            <img src="resources/images/folder.png" class="category-directory" alt="dir">
+            <span>{{ @name }}</span>
+        </div>
+    </div>
+
+</webc-datatable>
+
+</div>
+
+
+</webc-container>

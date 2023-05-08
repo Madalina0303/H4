@@ -1,0 +1,31 @@
+{
+  "pagesFallback": {
+    "name": "home",
+    "src": "./home.html"
+  },
+  "pages": [
+    {
+      "name": "Home",
+      "tag": "home",
+      "src": "./home.html",
+      "path": "./"
+    },
+    {
+      "name": "Add Event",
+      "src":"addEvent.html",
+      "tag": "addEvent"
+    },
+    {
+   
+      "name": "View Events",
+      "src": "./home.html",
+      "tag": "viewEvents"
+   
+   },
+   {
+    "name": "Missing Field",
+      "src": "./404.html",
+      "tag": "missing-field"
+   }
+  ]
+}
