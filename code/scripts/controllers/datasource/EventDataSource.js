@@ -9,6 +9,7 @@ const db = {
    },
 
 };
+const events = []
 
 export class EventDataSource extends DataSource {
 
@@ -18,6 +19,17 @@ export class EventDataSource extends DataSource {
 
    }
 
+   addEvent(date, time, category, details){
+    events.push({
+        date: date,
+        time: time,
+        category: category,
+        details: details,
+    })
+   }
+
+
+
    /**
 
   * @override
@@ -26,17 +38,18 @@ export class EventDataSource extends DataSource {
 
    async getPageDataAsync(startOffset, dataLengthForCurrentPage) {
 
-       const data = db.fetchData(startOffset, dataLengthForCurrentPage);
-
+       const data = events
+       if(localStorage == null){
+        return []
+       }
        return data.map((index) => ({
 
-           date: startOffset + index + 1,
-           time: `Text ${index + 1}`,
-           category: "Aa",
-           details: "",
+        date: index.date,
+        time: index.time,
+        category: index.category,
+        details: index.details,
 
-       }));
-
+   }));
    }
 
 }

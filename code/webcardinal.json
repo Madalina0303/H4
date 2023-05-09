@@ -24,7 +24,7 @@
    },
    {
     "name": "Missing Field",
-      "src": "./404.html",
+      "src": "./missing-fields.html",
       "tag": "missing-field"
    }
   ]

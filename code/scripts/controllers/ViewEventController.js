@@ -17,6 +17,7 @@ export default class ViewEventController extends WebcController {
 
    }
    addCategoryListener() {
+    
     this.onTagClick('add-event', () => {
         this.navigateToPageTag('addEvent');
     });
